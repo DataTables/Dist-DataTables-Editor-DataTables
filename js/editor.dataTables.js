@@ -1,4 +1,4 @@
-/*! Editor default styling 3.0.0 for DataTables
+/*! Editor default styling 3.0.1 for DataTables
  * Copyright (c) SpryMedia Ltd - https://datatables.net/license/plus
  */
 
