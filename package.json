@@ -1,16 +1,15 @@
 {
     "name": "datatables.net-editor-dt",
     "description": "Editor for DataTables with styling for [DataTables](https://datatables.net/)",
-    "main": "js/editor.dataTables.js",
-    "module": "js/editor.dataTables.mjs",
-    "style": "css/editor.dataTables.css",
+    "main": "./js/editor.dataTables.js",
+    "module": "./js/editor.dataTables.mjs",
+    "style": "./css/editor.dataTables.css",
     "types": "./types/editor.dataTables.d.ts",
     "version": "3.0.2",
     "files": [
-        "css/**/*.css",
-        "js/**/*.js",
-        "js/**/*.mjs",
-        "types/**/*.d.ts"
+        "js",
+        "css",
+        "types"
     ],
     "keywords": [
         "Editing",
@@ -33,5 +32,24 @@
     },
     "homepage": "https://datatables.net",
     "bugs": "https://datatables.net/forums",
-    "license": "SEE LICENSE IN License.txt"
+    "license": "SEE LICENSE IN License.txt",
+    "exports": {
+        ".": {
+            "types": "./types/editor.dataTables.d.ts",
+            "import": "./js/editor.dataTables.mjs",
+            "default": "./js/editor.dataTables.mjs",
+            "require": "./js/editor.dataTables.js"
+        },
+        "./js/*": "./js/*",
+        "./css": {
+            "types": "./types/css.d.ts",
+            "default": "./css/editor.dataTables.css"
+        },
+        "./css/*": {
+            "types": "./types/css.d.ts",
+            "default": "./css/*"
+        },
+        "./package.json": "./package.json"
+    },
+    "sideEffects": true
 }
