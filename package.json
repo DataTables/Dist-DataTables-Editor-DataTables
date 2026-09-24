@@ -36,9 +36,10 @@
     "exports": {
         ".": {
             "types": "./types/editor.dataTables.d.ts",
+            "style": "./css/editor.dataTables.css",
             "import": "./js/editor.dataTables.mjs",
-            "default": "./js/editor.dataTables.mjs",
-            "require": "./js/editor.dataTables.js"
+            "require": "./js/editor.dataTables.js",
+            "default": "./js/editor.dataTables.mjs"
         },
         "./js/*": "./js/*",
         "./css": {
